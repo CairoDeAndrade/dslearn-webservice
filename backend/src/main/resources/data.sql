@@ -26,3 +26,6 @@ INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) 
 INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Chapter 1', 'Basic HTML', 1, 'https://live.staticflickr.com/65535/51922705627_5f861f6b15_b.jpg', 1, null);
 INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Chapter 2', 'Intermediate HTML', 2, 'https://live.staticflickr.com/65535/51922705627_5f861f6b15_b.jpg', 1, 1);
 INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Chapter 3', 'Advanced HTML', 3, 'https://live.staticflickr.com/65535/51922705627_5f861f6b15_b.jpg', 1, 2);
+
+INSERT INTO tb_enrollment (user_id, offer_id, enrollment_Instant, refund_Instant, available, only_Update) VALUES (1, 1, TIMESTAMP WITH TIME ZONE '2021-11-20T13:00:00Z', null, true, false);
+INSERT INTO tb_enrollment (user_id, offer_id, enrollment_Instant, refund_Instant, available, only_Update) VALUES (2, 1, TIMESTAMP WITH TIME ZONE '2021-11-20T13:00:00Z', null, true, false);
