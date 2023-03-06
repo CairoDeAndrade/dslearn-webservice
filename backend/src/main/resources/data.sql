@@ -21,3 +21,8 @@ INSERT INTO tb_offer (edition, start_Moment, end_Moment, course_id) VALUES ('2.0
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('HMTL trail', 'Main trail of the course', 1, 'https://live.staticflickr.com/65535/51922705627_5f861f6b15_b.jpg', 1, 1);
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Forum', 'Clear your doubt', 2, 'https://live.staticflickr.com/65535/51922705627_5f861f6b15_b.jpg', 2, 1);
 INSERT INTO tb_resource (title, description, position, img_Uri, type, offer_id) VALUES ('Lives', 'Exclusive lives to the class', 3, 'https://live.staticflickr.com/65535/51922705627_5f861f6b15_b.jpg', 0, 1);
+
+
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Chapter 1', 'Basic HTML', 1, 'https://live.staticflickr.com/65535/51922705627_5f861f6b15_b.jpg', 1, null);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Chapter 2', 'Intermediate HTML', 2, 'https://live.staticflickr.com/65535/51922705627_5f861f6b15_b.jpg', 1, 1);
+INSERT INTO tb_section (title, description, position, img_Uri, resource_id, prerequisite_id) VALUES ('Chapter 3', 'Advanced HTML', 3, 'https://live.staticflickr.com/65535/51922705627_5f861f6b15_b.jpg', 1, 2);
