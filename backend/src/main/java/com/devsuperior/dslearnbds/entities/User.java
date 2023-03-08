@@ -41,6 +41,9 @@ public class User implements Serializable{
 	@OneToMany(mappedBy = "user")
 	private List<Notification> notifications = new ArrayList<>();
 	
+	@OneToMany(mappedBy = "author")
+	private List<Topic> topics = new ArrayList<>();
+	
 	public User() {
 	}
 
@@ -90,6 +93,10 @@ public class User implements Serializable{
 
 	public List<Notification> getNotifications() {
 		return notifications;
+	}
+
+	public List<Topic> getTopics() {
+		return topics;
 	}
 
 	@Override
