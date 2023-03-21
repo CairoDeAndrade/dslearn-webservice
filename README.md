@@ -12,7 +12,7 @@ Para um melhor entendimento da plataforma acesse o design disponibilizado pelo B
 ## Tecnologias e ferramentas utilizadas
 - Spring Boot
 - Spring Security (OAuth2, Token JWT e Refresh Token)
-- JUnit
+- Bean Validation
 - JPA, Hibernate
 - H2
 - Postman
